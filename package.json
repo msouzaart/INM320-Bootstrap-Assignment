@@ -2,13 +2,20 @@
   "name": "inm320-bootstrap-assignment",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "lite-server --baseDir=\"public\""
+    "dev": "lite-server --baseDir=\"public\"",
+    "watch": "sass --watch src/scss:public/Assets/CSS",
+    "start": "concurrently \"npm run dev\" \"npm run watch\""
   },
+
   "author": "Marcela Souza",
   "license": "Private",
-  "private":true,
+  "private": true,
   "devDependencies": {
-    "lite-server": "^2.6.1"
+  "concurrently": "^9.1.0",
+  "lite-server": "^2.6.1",
+   "sass": "^1.80.6"
+    
   }
 }

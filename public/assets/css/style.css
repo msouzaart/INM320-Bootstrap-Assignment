@@ -1,0 +1,624 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+#full {
+  height: 100vh;
+}
+
+/* Mobile Default */
+
+/*nav*/
+#navmob {
+  display: flex;
+  width: 100%;
+}
+
+.ncontent {
+  display: none;
+}
+
+#logo img {
+  margin-bottom: 50px;
+}
+
+.navbar-nav {
+  width: 100vw;
+  margin-left: -1vh;
+}
+
+
+
+.navbar-nav li i {
+  width: 2vw;
+}
+
+.nav-link {
+  color: #9fa2b4;
+}
+
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-link {
+  margin-left: 20px;
+}
+
+.nav-item i {
+  color: #9fa2b4;
+}
+
+.nav-item a {
+  color: #a4a6b3;
+}
+
+.nav-item:hover {
+  background-color: rgba(159, 162, 180, 0.1);
+  color: #dde2ff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/*main content*/
+#content {
+  background-color: #e8ebf5;
+  height: fit-content;
+  width: 100%;
+}
+
+.section01 {
+  display: flex;
+  margin: 20px 50px 20px 20px;
+}
+
+.ptitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#userphoto {
+  border-radius: 50%;
+  margin: 2%;
+}
+
+#userphoto img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.s1icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 20px;
+}
+
+/*section 01*/
+
+.title {
+  margin-left: 20px;
+}
+
+.title h2 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/*section 2*/
+.s2content {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.s2card {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 5%;
+  -webkit-box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
+  box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
+  border-color: #dfe0eb;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+}
+
+.s2card p {
+  color: #9fa2b4;
+  margin-bottom: 5px;
+}
+
+.s2card h3 {
+  color: #000000;
+  font-weight: 700;
+}
+
+.s2card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
+  box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
+  border-color: #3751ff;
+  border-style: solid;
+  border-width: 2px;
+  color: #3751ff;
+  background-color: white;
+}
+
+.s2card:hover p,
+.s2card:hover h3 {
+  color: #3751ff;
+}
+
+/*section 03*/
+
+.col-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 20%;
+  max-width: 100%;
+}
+
+.col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 30%;
+  max-width: 100%;
+}
+
+.s3content {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaço entre os elementos */
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: rgb(255, 255, 255);
+}
+
+.s3graph {
+  height: auto; /* Ajusta a altura conforme o tamanho da imagem */
+  width: 100%;
+}
+
+.s3graph img {
+  margin-top: 5%;
+  width: 100%;
+  height: auto; /* Garante que a imagem mantenha proporções */
+  display: block; /* Remove espaçamento indesejado */
+}
+
+.s3cardgp {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards ocupem várias linhas */
+  justify-content: center; /* Centraliza os cards */
+  /* background-color: #3751ff; */
+  padding: 20px; /* Ajusta o espaço interno ao redor dos cards */
+  border-radius: 8px; /* Para suavizar os cantos */
+}
+
+.s3card {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-style: solid; /* up, right, bottom, left */
+  border-width: 1px; /* up, right, bottom, left */
+  border-color: #cdced3;
+  padding: 10px;
+  border-radius: 0 !important; /* ou o valor desejado */
+}
+
+.s3card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.s3card p {
+  font-size: 1rem;
+  color: #9fa2b4;
+  margin: 0;
+}
+
+.s4content {
+  /* background-color: rgb(65, 42, 53); */
+  margin-bottom: 2%;
+  gap: 10px;
+}
+
+.s4card1,
+.s4card2 {
+  background-color: #ffffff;
+  margin-top: 3%;
+  border-radius: 8px !important; /* ou o valor desejado */
+  overflow: hidden !important; /* garante que os elementos internos respeitem o border-radius */
+  padding: 3%;
+}
+
+.s4header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3% 0;
+}
+
+.s4title h4 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #252733;
+  margin-bottom: 0;
+}
+
+.s4title p {
+  font-size: 0.8rem;
+  color: #999aa1;
+}
+
+.s4title p span {
+  font-size: 0.8rem;
+  color: #4b506d;
+}
+
+#s4link {
+  color: #3751ff;
+  font-size: 1rem;
+}
+
+.s4smallgp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%; /* Garante que o elemento ocupe toda a largura */
+  border-bottom: 0.5px solid #dfe0e4; /* Adiciona a linha */
+  padding-top: 10px; /* Ajuste conforme necessário */
+  margin: 0; /* Remove margens laterais */
+
+  padding-bottom: 10px;
+}
+
+.s4smallgp:last-child {
+  border-bottom: none;
+}
+
+.card {
+  padding: 0; /* Remove padding interno, se necessário */
+}
+
+.s4smallgp p {
+  font-size: 1rem;
+  color: #252733;
+}
+
+.s4small p {
+  color: #9fa2b4;
+  margin-bottom: 0;
+}
+
+.s4gap {
+  gap: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-left: 2vh;
+}
+
+@media (min-width: 768px) {
+  /*nav*/
+
+  .col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  #navmob {
+    display: none;
+  }
+
+  .ncontent {
+    background-color: #363740;
+    padding-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo {
+    margin-bottom: 10px;
+  }
+
+  #logo img {
+    margin-bottom: 50px;
+  }
+
+  #navlist {
+    padding: 0 8%;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(159, 162, 180, 0.1);
+    color: #dde2ff;
+    opacity: 0.5;
+  }
+
+  #navidea {
+    padding-left: 10%;
+  }
+
+  .nav-item i {
+    color: #9fa2b4;
+  }
+
+  .nav-item a {
+    color: #a4a6b3;
+  }
+
+  /*main content*/
+  #content {
+    background-color: #e8ebf5;
+    height: fit-content;
+  }
+
+  .section01 {
+    display: flex;
+    margin: 20px 50px 20px 20px;
+  }
+
+  .ptitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #userphoto {
+    border-radius: 50%;
+    margin: 2%;
+  }
+
+  #userphoto img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .s1icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+  }
+
+  /*section 01*/
+
+  .title {
+    margin-left: 20px;
+  }
+
+  .title h2 {
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  /*section 2*/
+  .s2content {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    /* background-color: chocolate; */
+  }
+
+  .s2card {
+    height: 10vh;
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 5%;
+    -webkit-box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
+    box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
+    border-color: #dfe0eb;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+  }
+
+  .s2card p {
+    color: #9fa2b4;
+    margin-bottom: 5px;
+  }
+
+  .s2card h3 {
+    color: #000000;
+    font-weight: 700;
+  }
+
+  .s2card:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
+    box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
+    border-color: #3751ff;
+    border-style: solid;
+    border-width: 2px;
+    color: #3751ff;
+    background-color: white;
+  }
+
+  .s2card:hover p,
+  .s2card:hover h3 {
+    color: #3751ff;
+  }
+
+  /*section 03*/
+  .s3content {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    border-radius: 8px !important; /* ou o valor desejado */
+    overflow: hidden !important; /* garante que os elementos internos respeitem o border-radius */
+
+    background-color: rgb(255, 255, 255);
+  }
+
+  .s3graph {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+  }
+
+  .s3graph img {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .s3cardgp {
+    /* background-color: #3751ff; */
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0; /* Espaçamento entre os cards */
+  }
+
+  .s3card {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-style: none none solid solid; /* up, right, bottom, left */
+    border-width: 0 0 1px 1px; /* up, right, bottom, left */
+    border-color: transparent transparent #cdced3 #cdced3;
+    padding: 10px;
+    border-radius: 0 !important; /* ou o valor desejado */
+  }
+
+  .s3card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .s3card p {
+    font-size: 1rem;
+    color: #9fa2b4;
+    margin-bottom: 0;
+  }
+
+  /*section 04*/
+
+  .s4content {
+    /* background-color: rgb(65, 42, 53); */
+    margin-bottom: 2%;
+    gap: 10px;
+  }
+
+  .s4card1,
+  .s4card2 {
+    background-color: #ffffff;
+    margin-top: 3%;
+    border-radius: 8px !important; /* ou o valor desejado */
+    overflow: hidden !important; /* garante que os elementos internos respeitem o border-radius */
+    padding: 3%;
+  }
+
+  .s4header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3% 0;
+  }
+
+  .s4title h4 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #252733;
+    margin-bottom: 0;
+  }
+
+  .s4title p {
+    font-size: 0.8rem;
+    color: #999aa1;
+  }
+
+  .s4title p span {
+    font-size: 0.8rem;
+    color: #4b506d;
+  }
+
+  #s4link {
+    color: #3751ff;
+    font-size: 1rem;
+  }
+
+  .s4smallgp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%; /* Garante que o elemento ocupe toda a largura */
+    border-bottom: 0.5px solid #dfe0e4; /* Adiciona a linha */
+    padding-top: 10px; /* Ajuste conforme necessário */
+    margin: 0; /* Remove margens laterais */
+
+    padding-bottom: 10px;
+  }
+
+  .s4smallgp:last-child {
+    border-bottom: none;
+  }
+
+  .card {
+    padding: 0; /* Remove padding interno, se necessário */
+  }
+
+  .s4smallgp p {
+    font-size: 1rem;
+    color: #252733;
+  }
+
+  .s4small p {
+    color: #9fa2b4;
+    margin-bottom: 0;
+  }
+
+  .s4gap {
+    gap: 15px;
+    flex-wrap: nowrap !important;
+    display: flex;
+    justify-content: center;
+  }
+}
