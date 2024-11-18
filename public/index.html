@@ -6,27 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Assignment</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-    <!--font awsome-->
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
-
-
-    <!--google font-->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
 
-
-    <link rel="stylesheet" href="/assets/css/style.css">
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css?v=1.0">
 </head>
 
 <body>
@@ -34,54 +24,54 @@
     <div class="container-fluid">
         <main class="row" id="full">
 
-            <!-- Navbar Mobile -->
+            <!-- Navbar for mobile view -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navmob">
-                <a class="navbar-brand" href="#"> <img src="./assets/images/logo.svg" alt=""></a>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.svg" alt="logo dashboard kit mobile">
+                </a>
 
+                <!-- Toggle menu for mobile -->
                 <div class="pos-f-t">
                     <div class="collapse" id="navbarToggleExternalContent" id="menuMobile">
+
+                        <!-- Mobile navigation links -->
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <i class="fa-solid fa-chart-pie"></i>
                                 <a class="nav-link" aria-current="page" href="#">Overview</a>
                             </li>
-
                             <li class="nav-item">
                                 <i class="fa-solid fa-ticket"></i>
                                 <a class="nav-link" aria-current="page" href="#">Tickets</a>
                             </li>
-
                             <li class="nav-item">
                                 <i class="fa-solid fa-lightbulb"></i>
                                 <a class="nav-link" id="navidea" aria-current="page" href="#">Ideas</a>
                             </li>
-
                             <li class="nav-item">
                                 <i class="fa-solid fa-users"></i>
                                 <a class="nav-link" aria-current="page" href="#">Contacts</a>
                             </li>
-
                             <li class="nav-item">
                                 <i class="fa-solid fa-user-tie"></i>
                                 <a class="nav-link" aria-current="page" href="#">Agents</a>
                             </li>
-
                             <li class="nav-item">
                                 <i class="fa-solid fa-book"></i>
                                 <a class="nav-link" aria-current="page" href="#">Articles</a>
                             </li>
-
                             <li class="nav-item">
                                 <i class="fa-solid fa-gear"></i>
                                 <a class="nav-link" aria-current="page" href="#">Settings</a>
                             </li>
-
                             <li class="nav-item">
                                 <i class="fa-solid fa-medal"></i>
                                 <a class="nav-link" aria-current="page" href="#">Subscription</a>
                             </li>
                         </ul>
+
                     </div>
+                    <!-- Navbar toggler button for opening the menu -->
                     <nav class="navbar navbar-dark bg-dark">
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
@@ -90,110 +80,102 @@
                         </button>
                     </nav>
                 </div>
-
             </nav>
 
-
-            <!--Lateral nav desktop-->
+            <!-- Sidebar navigation for desktop view -->
             <nav class="col-md-2 ncontent">
 
+                <!-- Logo for desktop view -->
                 <span id="logo">
-                    <img src="./assets/images/logo.svg" alt="">
+                    <img src="./assets/images/logo.svg" alt="logo dashboard kit desktop size">
                 </span>
 
+                <!-- Desktop navigation links -->
                 <ul class="nav flex-column" id="navlist">
-
                     <li class="nav-item">
                         <i class="fa-solid fa-chart-pie"></i>
                         <a class="nav-link active" aria-current="page" href="#">Overview</a>
                     </li>
-
                     <li class="nav-item">
                         <i class="fa-solid fa-ticket"></i>
                         <a class="nav-link active" aria-current="page" href="#">Tickets</a>
                     </li>
-
                     <li class="nav-item">
                         <i class="fa-solid fa-lightbulb"></i>
                         <a class="nav-link active" id="navidea" aria-current="page" href="#">Ideas</a>
                     </li>
-
                     <li class="nav-item">
                         <i class="fa-solid fa-users"></i>
                         <a class="nav-link active" aria-current="page" href="#">Contacts</a>
                     </li>
-
                     <li class="nav-item">
                         <i class="fa-solid fa-user-tie"></i>
                         <a class="nav-link active" aria-current="page" href="#">Agents</a>
                     </li>
-
                     <li class="nav-item">
                         <i class="fa-solid fa-book"></i>
                         <a class="nav-link active" aria-current="page" href="#">Articles</a>
                     </li>
-
                     <li class="nav-item">
                         <i class="fa-solid fa-gear"></i>
                         <a class="nav-link active" aria-current="page" href="#">Settings</a>
                     </li>
-
                     <li class="nav-item">
                         <i class="fa-solid fa-medal"></i>
                         <a class="nav-link active" aria-current="page" href="#">Subscription</a>
                     </li>
-
-
-
                 </ul>
 
             </nav>
 
+            <!-- Main content section -->
             <div class="col-12 col-md-10" id="content">
 
-                <!--section 01-->
+                <!-- Section 01: Page title and user options -->
                 <section class="row ptitle">
 
+                    <!-- Page title -->
                     <div class="title">
                         <h2>Overview</h2>
                     </div>
 
+                    <!-- User profile and notifications -->
                     <div class="section01">
-
                         <div class="s1icon">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <i class="fa-solid fa-bell"></i>
                         </div>
                         <span id="userphoto">
-                            <img src="./assets/images/user.jpg" alt="">
+                            <img src="./assets/images/user.jpg" alt="user photo">
                         </span>
-
                     </div>
 
                 </section>
 
                 <div class="allcards">
 
-
-                    <!--section 02-->
-
+                    <!-- Section 02: Status cards -->
                     <section class="container s2content">
 
+                        <!-- Card 1: Unresolved tickets -->
                         <div class="col-3 s2card">
                             <p>Unresolved</p>
                             <h3>60</h3>
                         </div>
 
+                        <!-- Card 2: Overdue tickets -->
                         <div class="col-3 s2card">
                             <p>Overdue</p>
                             <h3>16</h3>
                         </div>
 
+                        <!-- Card 3: Open tickets -->
                         <div class="col-3 s2card">
                             <p>Open</p>
                             <h3>43</h3>
                         </div>
 
+                        <!-- Card 4: On-hold tickets -->
                         <div class="col-3 s2card">
                             <p>On hold</p>
                             <h3>64</h3>
@@ -201,16 +183,16 @@
 
                     </section>
 
-                    <!--section 03-->
+                    <!-- Section 03: Graph and statistics -->
                     <section class="row graph">
                         <div class="container s3content">
 
-                            <!--online graph-->
+                            <!-- Graph -->
                             <div class="col-8 s3graph">
-                                <img src="./assets/images/graph.svg" alt="">
-
+                                <img src="./assets/images/graph.svg" alt="graph today's trend">
                             </div>
-                            <!--cards-->
+
+                            <!-- Statistics cards -->
                             <div class="col-4 s3cardgp">
                                 <div class="row s3card">
                                     <p>Resolved</p>
@@ -232,18 +214,17 @@
                                     <p>Resolution within SLA</p>
                                     <h3>94%</h3>
                                 </div>
-
                             </div>
 
                         </div>
                     </section>
 
-                    <!--section 04-->
+                    <!-- Section 04: Additional cards -->
                     <section class="container s4content">
                         <div class="row s4gap">
 
                             <!--card 01-->
-                            <div class="col-6 s4card1">
+                            <div class="col-12 col-md-6 s4card1">
 
                                 <div class="s4header">
                                     <div class="s4title">
@@ -285,7 +266,7 @@
                             </div>
 
                             <!--card 02-->
-                            <div class="col-6 s4card2">
+                            <div class="col-12 col-md-6 s4card2">
 
                                 <div class="s4header">
                                     <div class="s4title">
@@ -346,8 +327,14 @@
 
             </div>
         </main>
+
+        <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/792baa9342.js" crossorigin="anonymous"></script>
+
+        <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Bootstrap JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
 

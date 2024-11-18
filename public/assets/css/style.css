@@ -34,8 +34,6 @@ p {
   margin-left: -1vh;
 }
 
-
-
 .navbar-nav li i {
   width: 2vw;
 }
@@ -43,7 +41,6 @@ p {
 .nav-link {
   color: #9fa2b4;
 }
-
 
 .nav-item {
   display: flex;
@@ -107,8 +104,7 @@ p {
   margin-right: 20px;
 }
 
-/*section 01*/
-
+/*section 01 - cards*/
 .title {
   margin-left: 20px;
 }
@@ -116,7 +112,7 @@ p {
 .title h2 {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /*section 2*/
@@ -127,7 +123,7 @@ p {
 }
 
 .s2card {
-  height: 10vh;
+  height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,6 +136,13 @@ p {
   border-style: solid;
   border-width: 1px;
   background-color: white;
+  cursor: pointer !important;
+}
+
+.s2card:active,
+.s2card:focus {
+  background-color: #3751ff;
+  color: white;
 }
 
 .s2card p {
@@ -153,14 +156,10 @@ p {
 }
 
 .s2card:hover {
-  cursor: pointer;
-  -webkit-box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
-  box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
-  border-color: #3751ff;
-  border-style: solid;
-  border-width: 2px;
-  color: #3751ff;
-  background-color: white;
+  cursor: pointer !important;
+  border-color: #3751ff !important;
+  color: #3751ff !important;
+  background-color: white !important;
 }
 
 .s2card:hover p,
@@ -168,7 +167,7 @@ p {
   color: #3751ff;
 }
 
-/*section 03*/
+/*section 03 - graph*/
 
 .col-8 {
   -ms-flex: 0 0 66.666667%;
@@ -181,36 +180,35 @@ p {
   flex: 0 0 30%;
   max-width: 100%;
 }
-
 .s3content {
   margin-top: 2%;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Espaço entre os elementos */
+  gap: 20px; /* Space between elements */
   border-radius: 8px !important;
   overflow: hidden !important;
   background-color: rgb(255, 255, 255);
+  padding: 0px;
 }
 
 .s3graph {
-  height: auto; /* Ajusta a altura conforme o tamanho da imagem */
+  height: auto; /* Adjusts height according to image size */
   width: 100%;
 }
 
 .s3graph img {
   margin-top: 5%;
   width: 100%;
-  height: auto; /* Garante que a imagem mantenha proporções */
-  display: block; /* Remove espaçamento indesejado */
+  height: auto; /* Ensures the image maintains proportions */
+  display: block; /* Removes unwanted spacing */
 }
 
 .s3cardgp {
   display: flex;
-  flex-wrap: wrap; /* Permite que os cards ocupem várias linhas */
-  justify-content: center; /* Centraliza os cards */
-  /* background-color: #3751ff; */
-  padding: 20px; /* Ajusta o espaço interno ao redor dos cards */
-  border-radius: 8px; /* Para suavizar os cantos */
+  flex-wrap: wrap; /* Allows cards to occupy multiple rows */
+  justify-content: center; /* Centers the cards */
+  padding: 0px;
+  border-radius: 8px; /* Softens the corners */
 }
 
 .s3card {
@@ -219,11 +217,11 @@ p {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  border-style: solid; /* up, right, bottom, left */
-  border-width: 1px; /* up, right, bottom, left */
+  border-style: solid; /* Up, right, bottom, left */
+  border-width: 1px; /* Up, right, bottom, left */
   border-color: #cdced3;
   padding: 10px;
-  border-radius: 0 !important; /* ou o valor desejado */
+  border-radius: 0 !important; /* Or the desired value */
 }
 
 .s3card h3 {
@@ -238,8 +236,9 @@ p {
   margin: 0;
 }
 
+/*section 04 - graph*/
+
 .s4content {
-  /* background-color: rgb(65, 42, 53); */
   margin-bottom: 2%;
   gap: 10px;
 }
@@ -248,8 +247,8 @@ p {
 .s4card2 {
   background-color: #ffffff;
   margin-top: 3%;
-  border-radius: 8px !important; /* ou o valor desejado */
-  overflow: hidden !important; /* garante que os elementos internos respeitem o border-radius */
+  border-radius: 8px !important; /* Or the desired value */
+  overflow: hidden !important; /* Ensures internal elements respect the border-radius */
   padding: 3%;
 }
 
@@ -287,10 +286,10 @@ p {
   justify-content: space-between;
   align-items: center;
 
-  width: 100%; /* Garante que o elemento ocupe toda a largura */
-  border-bottom: 0.5px solid #dfe0e4; /* Adiciona a linha */
-  padding-top: 10px; /* Ajuste conforme necessário */
-  margin: 0; /* Remove margens laterais */
+  width: 100%; /* Ensures the element occupies the full width */
+  border-bottom: 0.5px solid #dfe0e4; /* Adds the line */
+  padding-top: 10px; /* Adjust as needed */
+  margin: 0; /* Removes side margins */
 
   padding-bottom: 10px;
 }
@@ -300,7 +299,7 @@ p {
 }
 
 .card {
-  padding: 0; /* Remove padding interno, se necessário */
+  padding: 0; /* Removes internal padding if necessary */
 }
 
 .s4smallgp p {
@@ -316,18 +315,17 @@ p {
 .s4gap {
   gap: 15px;
   display: flex;
-  flex-wrap: nowrap;
   width: 100%;
   padding-left: 2vh;
 }
+/*=======================================================Desktop Version=============================================================*/
 
 @media (min-width: 768px) {
-  /*nav*/
-
+  /* Navigation styles */
   .col-8 {
-    -ms-flex: 0 0 66.666667%;
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
+    -ms-flex: 0 0 66.666667%; /* Set flexbox behavior for IE */
+    flex: 0 0 66.666667%; /* Define width in flexbox */
+    max-width: 66.666667%; /* Set maximum width */
   }
 
   .col-4 {
@@ -337,160 +335,155 @@ p {
   }
 
   #navmob {
-    display: none;
+    display: none; /* Hide mobile navigation */
   }
 
   .ncontent {
-    background-color: #363740;
+    background-color: #363740; /* Sidebar background color */
     padding-top: 1.5%;
-    display: flex;
+    display: flex; /* Use flexbox for layout */
     flex-direction: column;
   }
 
   #logo {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Add space below logo */
   }
 
   #logo img {
-    margin-bottom: 50px;
+    margin-bottom: 50px; /* Add larger spacing below logo image */
   }
 
   #navlist {
-    padding: 0 8%;
+    padding: 0 8%; /* Add padding inside navigation list */
   }
 
   .nav-item {
     display: flex;
-    align-items: center;
-    margin-bottom: 10%;
+    align-items: center; /* Center content vertically */
+    margin-bottom: 10%; /* Add spacing between navigation items */
   }
 
   .nav-item:hover {
-    background-color: rgba(159, 162, 180, 0.1);
-    color: #dde2ff;
+    background-color: rgba(159, 162, 180, 0.1); /* Change background on hover */
+    color: #dde2ff; /* Set hover text color */
     opacity: 0.5;
   }
 
   #navidea {
-    padding-left: 10%;
+    padding-left: 10%; /* Add left padding for specific navigation item */
   }
 
   .nav-item i {
-    color: #9fa2b4;
+    color: #9fa2b4; /* Icon color */
   }
 
   .nav-item a {
-    color: #a4a6b3;
+    color: #a4a6b3; /* Text color */
   }
 
-  /*main content*/
+  /* Main content styles */
   #content {
-    background-color: #e8ebf5;
-    height: fit-content;
+    background-color: #e8ebf5; /* Main content background */
+    height: fit-content; /* Adjust height automatically */
   }
 
   .section01 {
     display: flex;
-    margin: 20px 50px 20px 20px;
+    margin: 20px 50px 20px 20px; /* Add margins around section */
   }
 
   .ptitle {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space out content horizontally */
     align-items: center;
   }
 
   #userphoto {
-    border-radius: 50%;
+    border-radius: 50%; /* Make user photo circular */
     margin: 2%;
   }
 
   #userphoto img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+    height: 40px; /* Set image height */
+    width: 40px; /* Set image width */
+    border-radius: 50%; /* Circular photo */
   }
 
   .s1icon {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-right: 20px;
+    gap: 15px; /* Add spacing between icons */
+    margin-right: 20px; /* Add spacing to the right */
   }
 
-  /*section 01*/
-
+  /* Section 1 */
   .title {
-    margin-left: 20px;
+    margin-left: 20px; /* Add left margin */
   }
 
   .title h2 {
-    font-family: "Mulish", sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-family: "Mulish", sans-serif; /* Font style */
+    font-weight: 700; /* Bold font */
+    font-size: 1.5rem; /* Font size */
   }
 
-  /*section 2*/
+  /* Section 2 */
   .s2content {
     display: flex;
-    gap: 10px;
+    gap: 10px; /* Add spacing between elements */
     justify-content: center;
-    /* background-color: chocolate; */
   }
 
   .s2card {
-    height: 10vh;
-    /* margin: 10px; */
+    height: 10vh; /* Set card height */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* Center content vertically */
     align-items: center;
-    border-radius: 8px;
+    border-radius: 8px; /* Round card corners */
     padding: 5%;
-    -webkit-box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
-    box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
-    border-color: #dfe0eb;
-    border-style: solid;
-    border-width: 1px;
-    background-color: white;
+    box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27); /* Add shadow */
+    border-color: #dfe0eb; /* Border color */
+    border-style: solid; /* Solid border */
+    border-width: 1px; /* Border width */
+    background-color: white; /* Background color */
   }
 
   .s2card p {
-    color: #9fa2b4;
-    margin-bottom: 5px;
+    color: #9fa2b4; /* Text color */
+    margin-bottom: 5px; /* Add spacing below paragraph */
   }
 
   .s2card h3 {
-    color: #000000;
-    font-weight: 700;
+    color: #000000; /* Header text color */
+    font-weight: 700; /* Bold font */
   }
 
   .s2card:hover {
-    cursor: pointer;
-    -webkit-box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
-    box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27);
-    border-color: #3751ff;
-    border-style: solid;
-    border-width: 2px;
-    color: #3751ff;
+    cursor: pointer; /* Show pointer cursor on hover */
+    box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.27); /* Hover shadow effect */
+    border-color: #3751ff; /* Change border color on hover */
+    border-width: 2px; /* Increase border width on hover */
+    color: #3751ff; /* Change text color */
     background-color: white;
   }
 
   .s2card:hover p,
   .s2card:hover h3 {
-    color: #3751ff;
+    color: #3751ff; /* Change paragraph and header text color on hover */
   }
 
-  /*section 03*/
+  /* Section 3 */
   .s3content {
     margin-top: 2%;
     display: flex;
     flex-direction: row;
     height: fit-content;
-    border-radius: 8px !important; /* ou o valor desejado */
-    overflow: hidden !important; /* garante que os elementos internos respeitem o border-radius */
+    border-radius: 8px !important; /* Round container corners */
+    overflow: hidden !important; /* Ensure rounded corners apply */
+    background-color: rgb(255, 255, 255); /* Background color */
 
-    background-color: rgb(255, 255, 255);
+    
   }
 
   .s3graph {
@@ -502,123 +495,114 @@ p {
 
   .s3graph img {
     width: 100%;
-    background-color: rgb(255, 255, 255);
   }
 
   .s3cardgp {
-    /* background-color: #3751ff; */
-    /* height: 100%; */
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 0; /* Espaçamento entre os cards */
+    gap: 0; /* No spacing between cards */
+
+    justify-content: space-between;
   }
 
   .s3card {
+    flex: 1;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border-style: none none solid solid; /* up, right, bottom, left */
-    border-width: 0 0 1px 1px; /* up, right, bottom, left */
-    border-color: transparent transparent #cdced3 #cdced3;
+    border-style: none none solid solid; /* Set border on specific sides */
+    border-width: 0 0 1px 1px; /* Define border width */
+    border-color: transparent transparent #cdced3 #cdced3; /* Set border colors */
     padding: 10px;
-    border-radius: 0 !important; /* ou o valor desejado */
+    border-radius: 0 !important;
   }
 
   .s3card h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.5rem; /* Header font size */
+    font-weight: 700; /* Bold header */
   }
 
   .s3card p {
-    font-size: 1rem;
-    color: #9fa2b4;
-    margin-bottom: 0;
+    font-size: 1rem; /* Paragraph font size */
+    color: #9fa2b4; /* Paragraph text color */
+    margin-bottom: 0; /* Remove bottom margin */
   }
 
-  /*section 04*/
-
+  /* Section 4 */
   .s4content {
-    /* background-color: rgb(65, 42, 53); */
-    margin-bottom: 2%;
-    gap: 10px;
+    margin-bottom: 2%; /* Add spacing below section */
+    gap: 10px; /* Add spacing between elements */
   }
 
   .s4card1,
   .s4card2 {
-    background-color: #ffffff;
-    margin-top: 3%;
-    border-radius: 8px !important; /* ou o valor desejado */
-    overflow: hidden !important; /* garante que os elementos internos respeitem o border-radius */
+    background-color: #ffffff; /* Card background color */
+    margin-top: 3%; /* Add spacing above card */
+    border-radius: 8px !important; /* Round corners */
+    overflow: hidden !important; /* Ensure corners are rounded */
     padding: 3%;
   }
 
   .s4header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /* Distribute content evenly */
     padding: 3% 0;
   }
 
   .s4title h4 {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #252733;
-    margin-bottom: 0;
+    font-size: 1.5rem; /* Header font size */
+    font-weight: 800; /* Bold header */
+    color: #252733; /* Text color */
+    margin-bottom: 0; /* Remove bottom margin */
   }
 
   .s4title p {
-    font-size: 0.8rem;
-    color: #999aa1;
+    font-size: 0.8rem; /* Paragraph font size */
+    color: #999aa1; /* Text color */
   }
 
   .s4title p span {
-    font-size: 0.8rem;
-    color: #4b506d;
+    font-size: 0.8rem; /* Text inside span font size */
+    color: #4b506d; /* Span text color */
   }
 
   #s4link {
-    color: #3751ff;
-    font-size: 1rem;
+    color: #3751ff; /* Link color */
+    font-size: 1rem; /* Link font size */
   }
 
   .s4smallgp {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space items evenly */
     align-items: center;
-
-    width: 100%; /* Garante que o elemento ocupe toda a largura */
-    border-bottom: 0.5px solid #dfe0e4; /* Adiciona a linha */
-    padding-top: 10px; /* Ajuste conforme necessário */
-    margin: 0; /* Remove margens laterais */
-
+    width: 100%; /* Make full width */
+    border-bottom: 0.5px solid #dfe0e4; /* Add bottom border */
+    padding-top: 10px;
     padding-bottom: 10px;
+    margin: 0;
   }
 
   .s4smallgp:last-child {
-    border-bottom: none;
-  }
-
-  .card {
-    padding: 0; /* Remove padding interno, se necessário */
+    border-bottom: none; /* Remove border for the last child */
   }
 
   .s4smallgp p {
-    font-size: 1rem;
-    color: #252733;
+    font-size: 1rem; /* Paragraph font size */
+    color: #252733; /* Text color */
   }
 
   .s4small p {
-    color: #9fa2b4;
+    color: #9fa2b4; /* Text color */
     margin-bottom: 0;
   }
 
   .s4gap {
-    gap: 15px;
-    flex-wrap: nowrap !important;
+    gap: 15px; /* Add spacing between elements */
+    flex-wrap: nowrap !important; /* Prevent wrapping */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center elements */
   }
 }
